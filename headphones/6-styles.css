@@ -1,0 +1,90 @@
+/* ===========================
+   OUR RESULTS (CSS PENTAGONS)
+=========================== */
+
+#our-results {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+}
+
+.results-desc {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.pentagon-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.pentagon-item {
+    text-align: center;
+}
+
+/* PURE CSS PENTAGON */
+.pentagon {
+    width: 120px;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 80px 60px;
+    border-color: transparent transparent var(--primary) transparent;
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+/* top triangle of pentagon */
+.pentagon:after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -60px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 60px 0 60px;
+    border-color: var(--primary) transparent transparent transparent;
+}
+
+.pentagon span {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    width: 120px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* item label */
+.pentagon-item p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+    .pentagon-grid {
+        flex-direction: column;
+    }
+
+    .pentagon {
+        border-width: 0 50px 70px 50px;
+    }
+
+    .pentagon:after {
+        border-width: 35px 50px 0 50px;
+        top: -35px;
+        left: -50px;
+    }
+
+    .pentagon span {
+        left: -20px;
+        width: 100px;
+    }
+}
