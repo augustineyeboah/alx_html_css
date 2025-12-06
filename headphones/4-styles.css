@@ -1,0 +1,164 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --primary: #FF6565;
+    --text-light: #ffffff;
+    --text-dark: #333;
+    --bg-dark: #000;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+}
+
+/* HEADER */
+header {
+    background: url("images/headphones_hero_1.jpg") no-repeat center/cover;
+    padding: 20px 0;
+    color: white;
+    height: 90vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.navbar .logo {
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* WHAT WE DO */
+#what-we-do {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.icon-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.icon-card span {
+    font-size: 60px;
+    color: var(--primary);
+}
+
+/* OUR RESULTS */
+#our-results {
+    background: url("images/headphones_hero_2.jpg") no-repeat center/cover;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.circle-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CONTACT */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.social-icons span {
+    font-size: 32px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-icons span:hover {
+    color: var(--primary);
+}
+
+copyright {
+    opacity: 0.8;
+}
